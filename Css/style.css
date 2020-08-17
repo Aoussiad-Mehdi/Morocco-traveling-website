@@ -9,7 +9,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-image: url("..images/main.jpeg");
+    background-image: url("./images/main.jpeg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;

@@ -33,7 +33,6 @@ header{
 .sticky{
     background: #fff;
     border-bottom: 2px solid #000;
-    height: 67px;
 }
 .sticky #logo{
     color: #000;

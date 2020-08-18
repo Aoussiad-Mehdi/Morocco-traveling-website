@@ -16,7 +16,7 @@ body{
 header{
     width: 100%;
     height: 80px;
-    background: transparent;
+    background: none;
     display: flex;
     -webkit-display:flex;
     -moz-display:flex;
@@ -24,12 +24,28 @@ header{
     -o-display:flex;
     align-items: center;
     flex-direction: row;
+    transition: .5s ease;
+    z-index: 1;
+}
+/* the sticky header */
+.sticky{
+    background: #fff;
+    border-bottom: 2px solid #000;
+    height: 75px;
+    top: 0;
+    position: sticky;
+}
+.sticky #logo{
+    color: #000;
+}
+.sticky .nav-link{
+    color: #000;
 }
 #logo{
     flex-basis: 30%;
     font-family: 'Merienda';
     color: #fff;
-    padding-left: 70px;
+    padding-left: 50px;
     font-size: 40px;
     font-weight: bold;
 }
@@ -42,12 +58,11 @@ nav{
     -o-display:flex;
     justify-content: flex-end;
     align-items: center;
-    
+    transition: .4s ease; 
 }
 .nav-link{
-    margin-right: 30px;
     color: #fff;
-    font-size: 17px;
+    font-size: 16px;
     padding: 13px 24px;
     transition: .3s ease;
     border-radius: 60px;
@@ -66,6 +81,8 @@ nav{
     margin-top: 14.9px;
     transition: .4s ease;
     border-radius: 5px;
+    display: block;
+    background: #fff;
 }
 .drop-btn{
     text-align: center;
@@ -96,7 +113,7 @@ nav{
     margin-right: 50px;
     color: #fff;
     background: crimson;
-    padding: 13px 29px;
+    padding: 12px 25px;
     border-radius: 60px;
     font-weight: bold;
     font-size: 18px;
@@ -106,6 +123,27 @@ nav{
 }
 .active:hover{
     background: rgb(179, 8, 42);
+}
+.toggle{
+    margin-right: 15px;
+}
+.toggle i{
+    font-size: 28px;
+    background: crimson;
+    padding: 5px 9px;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s ease;
+    display: none;
+    border-radius: 5px;
+}
+.toggle i:hover{
+    background: rgb(179, 8, 42);
+}
+.toggle button{
+    border: none;
+    outline: none;
+    background: transparent;
 }
 /* Home section */
 #home{
@@ -119,6 +157,7 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 #title{
     color: #fff;
@@ -126,7 +165,7 @@ nav{
     font-weight: bold;
     font-size: 80px;
     padding: 20px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 span{
     color: crimson;
@@ -140,7 +179,7 @@ span{
     padding: 20px;
     margin-right: 160px; 
 }
-#home-btn{
+#home #home-btn{
     color: #fff;
     font-weight: bold;
     font-size: 25px;
@@ -151,6 +190,117 @@ span{
     margin-right: 510px;
     transition: .3s ease;
 }
-#home-btn:hover{
+#home #home-btn:hover{
     background: rgb(179, 8, 42);
+}
+/* media querries for the home page */
+@media (max-width:1039px){
+    nav{
+        margin-left: 20px;
+    }
+}
+@media (max-width:1000px){
+    #logo{
+        font-size: 25px;
+        padding-left: 20px;
+    }
+    .nav-link{
+        font-size: 16px;
+        margin-right: 0;
+        padding: 13px 20px;
+    }
+}
+@media (max-width:890px){
+    #title{
+        font-size: 40px;
+        margin-top: 10px;
+    }
+    #home p{
+        margin-right: 0;
+    }
+    #home #home-btn{
+        margin-right: 0;
+    }
+}
+@media (max-width:811px){
+    .toggle{
+        margin-left: 58%;
+    }
+    .toggle i{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    .actif{
+        position: fixed;
+        background: #fff;
+        display: block;
+        width: 100%;
+        height: 250px;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        transition: .5s linear;
+    }
+    .nav-link{
+        display: block;
+        margin: 10px;
+        text-align: center;
+        color: black;
+    }
+    .nav-link:hover{
+        color: #fff;
+    }
+    .dropdown{
+        margin-top: 0;
+        text-align: center;
+        height: 50px;
+        width: 100%;
+    }
+    .dropdown-content{
+        display: none;
+    }
+    .nav-link i{
+        display: none;
+    }
+    .active{
+        text-align: center;
+        margin-right: 0;
+        margin: 10px;
+        display: block;
+    } 
+}
+@media (max-width:570px){
+    .toggle{
+        margin-left: 55%;
+    }
+    #title{
+        font-size: 25px;
+    }
+    #home p{
+        font-size: 16px;
+        margin-bottom: 230px;     
+    }
+    #home #home-btn{
+        font-size: 17px;
+        padding: 13px 25px;
+        position: absolute;
+        top: 290px;
+    }
+}
+@media (max-width:520px){
+    .toggle{
+        margin-left: 59%;
+    }
+}
+@media (max-width:468px){
+    .toggle{
+        margin-left: 43%;
+    }
+}
+@media (max-width:410px){
+    .toggle{
+        margin-left: 45.5%;
+    }
 }

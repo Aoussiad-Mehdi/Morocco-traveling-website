@@ -165,7 +165,6 @@ nav{
     font-weight: bold;
     font-size: 80px;
     padding: 20px;
-    margin-top: 30px;
 }
 span{
     color: crimson;
@@ -186,7 +185,7 @@ span{
     padding: 15px 40px;
     background: crimson;
     border-radius: 60px;
-    margin-top: 70px;
+    margin-top: 60px;
     margin-right: 510px;
     transition: .3s ease;
 }

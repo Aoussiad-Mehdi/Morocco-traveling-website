@@ -41,6 +41,9 @@ header{
 .sticky .nav-link{
     color: #000;
 }
+.sticky .nav-link:hover{
+    color: #fff;
+}
 #logo{
     flex-basis: 30%;
     font-family: 'Merienda';
@@ -66,43 +69,37 @@ nav{
     padding: 13px 24px;
     transition: .3s ease;
     border-radius: 60px;
+    margin-right: 30px;
 }
 .nav-link:hover{
     background: crimson;
 }
 .dropdown{
-    background: #000;
     margin-top: 129px;
     width: 147.9px;
-    background: transparent;
     height: 150px;
 }
 .dropdown-content{
-    margin-top: 14.9px;
+    margin-top: 14px;
     transition: .4s ease;
     border-radius: 5px;
-    display: block;
-    background: #fff;
 }
 .drop-btn{
     text-align: center;
     padding: 11px 20px;
     color: crimson;
-    display: block;
     transition: .2s linear;
 }
 .drop-btn1{
     text-align: center;
     padding: 11px 20px;
     color: crimson;
-    display: block;
     transition: .2s linear;
 }
 .drop-btn2{
     text-align: center;
     padding: 11px 20px;
     color: crimson;
-    display: block;
     transition: .2s linear;
 }
 .drop-btn:hover ,.drop-btn1:hover , .drop-btn2:hover{

@@ -26,14 +26,14 @@ header{
     flex-direction: row;
     transition: .5s ease;
     z-index: 1;
+    top: 0;
+    position: sticky;
 }
 /* the sticky header */
 .sticky{
     background: #fff;
     border-bottom: 2px solid #000;
-    height: 75px;
-    top: 0;
-    position: sticky;
+    height: 67px;
 }
 .sticky #logo{
     color: #000;

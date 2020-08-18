@@ -165,6 +165,7 @@ nav{
     font-weight: bold;
     font-size: 80px;
     padding: 20px;
+    margin-top: 70px;
 }
 span{
     color: crimson;
@@ -275,7 +276,7 @@ span{
         margin-left: 55%;
     }
     #title{
-        font-size: 29px;
+        font-size: 40px;
     }
     #home p{
         font-size: 16px;

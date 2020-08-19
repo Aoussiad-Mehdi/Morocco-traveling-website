@@ -172,8 +172,8 @@ span{
     color: rgb(209, 202, 202);
     font-weight: 300;
     font-size: 21px;
-    padding: 20px;
-    margin-right: 160px; 
+    padding: 20px 300px; 
+    letter-spacing: 1px;
 }
 #home #home-btn{
     color: #fff;
@@ -183,19 +183,20 @@ span{
     background: crimson;
     border-radius: 60px;
     margin-top: 60px;
-    margin-right: 510px;
     transition: .3s ease;
 }
 #home #home-btn:hover{
     background: rgb(179, 8, 42);
 }
 /* media querries for the home page */
-@media (min-width: 1280px){
+@media(min-width : 1570px){
     #home p{
-        margin-right: 0;
+        padding: 20px 600px;
     }
-    #home #home-btn{
-        margin-right: 0;
+}
+@media (max-width: 1200px){
+    #home p{
+        padding: 20px 150px;
     }
 }
 @media (max-width:1039px){
@@ -221,6 +222,7 @@ span{
     }
     #home p{
         margin-right: 0;
+        padding: 20px;
     }
     #home #home-btn{
         margin-right: 0;
@@ -284,7 +286,8 @@ span{
     }
     #home p{
         font-size: 16px;
-        margin-bottom: 230px;     
+        margin-bottom: 230px;
+        padding: 20px;    
     }
     #home #home-btn{
         font-size: 17px;

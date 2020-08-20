@@ -77,11 +77,13 @@ nav{
     margin-top: 129px;
     width: 147.9px;
     height: 150px;
+    transition: .4s ease;
 }
 .dropdown-content{
     margin-top: 14px;
     transition: .4s ease;
     border-radius: 5px;
+    transition: .4s ease;
 }
 .drop-btn{
     text-align: center;

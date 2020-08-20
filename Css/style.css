@@ -124,7 +124,7 @@ nav{
     margin-right: 15px;
 }
 .toggle i{
-    font-size: 28px;
+    font-size: 25px;
     background: crimson;
     padding: 5px 9px;
     color: #fff;
@@ -137,6 +137,8 @@ nav{
     background: rgb(179, 8, 42);
 }
 .toggle button{
+    height: 38px;
+    width: 38px;
     border: none;
     outline: none;
     background: transparent;
@@ -230,7 +232,7 @@ span{
 }
 @media (max-width:811px){
     .toggle{
-        margin-left: 58%;
+        margin-left: auto;
     }
     .toggle i{
         display: block;
@@ -278,9 +280,6 @@ span{
     } 
 }
 @media (max-width:570px){
-    .toggle{
-        margin-left: 55%;
-    }
     #title{
         font-size: 30px;
     }
@@ -295,25 +294,7 @@ span{
         position: absolute;
     }
 }
-@media (max-width:520px){
-    .toggle{
-        margin-left: 59%;
-    }
-}
-@media (max-width:468px){
-    .toggle{
-        margin-left: 43%;
-    }
-}
-@media (max-width:410px){
-    .toggle{
-        margin-left: 45.5%;
-    }
-}
 @media (max-width:330px){
-    .toggle{
-        margin-left: 35.5%;
-    }
     #title{
         font-size: 23px;
     }

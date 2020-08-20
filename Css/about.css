@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto';
+}
+html{
+    scroll-behavior: smooth;
+}
+#about{
+    width: 100%;
+    background: #fff;
+    display: flex;
+    -webkit-display:flex;
+    -moz-display:flex;
+    -ms-display:flex;
+    -o-display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: .9s ease; 
+}
+#about #aboutitle{
+    padding: 20px 0;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Merienda';
+    font-size: 40px;
+}
+#about .column{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.text{
+    margin: 35px;
+}
+.text h2{
+    text-align: center;
+    padding: 30px;
+    font-family: 'Merienda';
+}
+.text p{
+    padding: 40px;
+    background: rgb(216, 216, 216);
+    text-align: center;
+    font-weight: 200;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.column img{
+    max-width: 100%;
+    height: 290px;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+/* media queries for handeling the about page responsiveness*/
+@media(min-width:1300px){
+    #about img{
+        margin-left: 160px;
+    }
+}
+@media(min-width:1500px){
+    #about img{
+        margin-left: 250px;
+    }
+}
+@media(min-width:1700px){
+    #about .column{
+        margin: 80px;
+    }
+    #about img{
+        margin-left: auto;
+    }
+}
+@media(max-width:1130px){
+    .column img{
+        margin-left: auto;
+    }
+}
+@media(max-width:750px){
+    #about .column{
+        grid-template-columns: 1fr;
+    }
+    #about img{
+        margin: auto;
+    }
+}
+@media(max-width:505px){
+    #about #aboutitle{
+        font-size: 28px;
+    }
+    .text{
+        margin: 10px;
+    }
+    .column{
+        margin: 10px;
+    }
+    .text h2{
+        font-size: 20px;
+    }
+    #about p{
+        padding: 20px;
+    }
+    #about img{
+        margin: auto;  
+    }
+}
+

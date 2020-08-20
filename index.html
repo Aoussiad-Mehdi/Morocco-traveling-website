@@ -6,6 +6,7 @@
     <title>Morocco</title>
     <link rel="icon" href="images/morocco.png">
     <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/about.css">
     <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/e391ce7786.js" crossorigin="anonymous"></script>
@@ -17,8 +18,8 @@
         <header class="header">
             <h1 id="logo">Morocco</h1>
             <nav class="navbar">
-                <a href="#" class="nav-link">Home</a>
-                <a href="#" class="nav-link">About</a>
+                <a href="#" class="nav-link" onclick="removeNav()">Home</a>
+                <a href="#about" class="nav-link" onclick="removeNav()">About</a>
                 <div class="dropdown">
                 <a href="#" id="drop" class="nav-link" onmouseout="dropdown2()" onmouseover="dropdown1()">Places <i class="fas fa-chevron-down"></i></a>
                    <div class="dropdown-content" onmouseout="dropdown2()" onmouseover="dropdown1()">
@@ -41,6 +42,43 @@
                 spend less money, and get the best traveling experience by visiting beauthiful places of the country.
             </p>
             <a href="#" id="home-btn">Discover</a>
+        </section>
+        <!--About section-->
+        <section id="about">
+            <h1 id="aboutitle">About <span>Morocco</span></h1>
+            <!--1st-->
+            <div class="column">
+
+                <div class="text">
+                <h2>What is <span>Morocco</span> ?</h2>
+                <p>
+                    Morocco, officially referred to as the Kingdom of Morocco is a country located in North Africa
+                    with a population of nearly 40 million. Morocco has a coast on the Atlantic Ocean that reaches
+                    past the Strait of Gibralter into the Mediterranean Sea. Morocco has international borders with
+                    Algeria to the east, Spain to the north (a water border through the Strait and land borders with
+                    two small Spanish autonmous cities, Ceuta and Meillia) and Maurtania to south via its Western Sahara
+                    territories. </p>
+                </div>
+
+                <img src="images/morocco.png" alt="">
+            </div>
+             <!--2nd-->
+            <div class="column">
+
+                <div class="text">
+                    <h2>What <span>Morocco</span> Offers for Tourists ?</h2>
+                    <p>
+                        Morocco offers a taste of exotica for travelrs who are interested in discovering a moderate Muslim
+                        country. Morocco is the only North African country that offers tradition and modernity in the 21st
+                        century. Morocco boasts a combination of natural wonders, windy old medinas and an immense history.
+                        The top 10 places not to miss, when traveling to Morocco are: Djemaa El Fna Square, the Majorelle 
+                        Gardens, the Mosque of Koutoubia, the Erg Chebbi Dunes, the Cascades D'Ouzoud Waterfalls, the Roman
+                        Ruins of Volubilis, the Todra Gorge, Ait Benhaddou Kasbah, Kasbah Taourirt and the Batha Musuem and
+                        Gardens. </p>
+                    </div>
+    
+                    <img src="images/jamaa.jpeg" alt="">
+            </div>
         </section>
 </body>
 </html>

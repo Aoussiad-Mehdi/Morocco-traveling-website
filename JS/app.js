@@ -41,14 +41,26 @@ togle.addEventListener('click', function(){
         icon.className = 'fas fa-bars';
     }
 });
+function removeNav(){
+    navbar.classList.remove('actif');
+    icon.className = 'fas fa-bars';
+    
+}
 
 // Changing header background on scroll.
 const header = document.querySelector('header');
+const about = document.getElementById('about');
+
 window.addEventListener('scroll', function(){
     if(window.scrollY > 100){
         header.classList.add('sticky');
-    }else{
+    }
+    else if(window.scrollY > 30){
+        about.style.opacity = '1';
+    }
+    else{
         header.classList.remove('sticky');
+        about.style.opacity = '0';
     }
 });
 

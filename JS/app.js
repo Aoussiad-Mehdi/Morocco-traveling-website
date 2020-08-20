@@ -56,10 +56,8 @@ const header = document.querySelector('header');
 const about = document.getElementById('about');
 
 window.addEventListener('scroll', function(){
-    if(window.scrollY > 100){
+    if(window.scrollY > 80){
         header.classList.add('sticky');
-    }
-    else if(window.scrollY > 30){
         about.style.opacity = '1';
     }
     else{
@@ -67,5 +65,6 @@ window.addEventListener('scroll', function(){
         about.style.opacity = '0';
     }
 });
+
 
 

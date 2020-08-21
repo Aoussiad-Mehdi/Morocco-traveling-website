@@ -29,6 +29,13 @@ html{
     font-family: 'Merienda';
     font-size: 40px;
 }
+#line{
+    max-width: 270px;
+    width: 260px;
+    height: 7px;
+    background: crimson;
+    border-radius: 8px;
+}
 #about .column{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -94,6 +101,9 @@ html{
     #about #aboutitle{
         font-size: 28px;
     }
+    #line{
+        width: 180px;
+    }
     .text{
         margin: 10px;
     }
@@ -111,4 +121,5 @@ html{
         height: 220px; 
     }
 }
+
 

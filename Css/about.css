@@ -55,7 +55,7 @@ html{
 .column img{
     max-width: 100%;
     height: 290px;
-    margin-top: 30px;
+    margin-top: 80px;
     margin-left: 100px;
 }
 /* media queries for handeling the about page responsiveness*/
@@ -107,7 +107,8 @@ html{
         padding: 20px;
     }
     #about img{
-        margin: auto;  
+        margin: auto;
+        height: 220px; 
     }
 }
 

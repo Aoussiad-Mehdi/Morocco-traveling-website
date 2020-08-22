@@ -8,6 +8,10 @@
 html{
     scroll-behavior: smooth;
 }
+::selection{
+    background: crimson;
+    color: #fff;
+}
 body{
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -302,5 +306,30 @@ span{
     }
     #home p{
         padding: 35px 8px;
+    }
+}
+/* the scrolling btn that go up */
+#cursor{
+    z-index: 1;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    border: none;
+    outline: none;
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+    display: none;
+    transition: .4s linear;
+}
+#cursor i{
+    font-size: 40px;
+    color: crimson;
+}
+@media (max-width: 500px){
+    #cursor{
+        right: 10px;
+        bottom: 15px;
     }
 }

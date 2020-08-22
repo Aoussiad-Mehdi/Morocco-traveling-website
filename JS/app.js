@@ -54,15 +54,18 @@ function removeNav(){
 // also showing the about section while scrolling.
 const header = document.querySelector('header');
 const about = document.getElementById('about');
+const cursor = document.getElementById('cursor');
 
 window.addEventListener('scroll', function(){
     if(window.scrollY > 80){
         header.classList.add('sticky');
         about.style.opacity = '1';
+        cursor.style.display = 'block';
     }
     else{
         header.classList.remove('sticky');
         about.style.opacity = '0';
+        cursor.style.display = 'none';
     }
 });
 

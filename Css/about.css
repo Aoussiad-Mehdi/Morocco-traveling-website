@@ -20,7 +20,8 @@ html{
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: .9s ease; 
+    transition: .9s ease;
+    padding-bottom: 100px;
 }
 #about #aboutitle{
     padding: 20px 0;
@@ -121,5 +122,87 @@ html{
         height: 220px; 
     }
 }
+
+/* discover section */
+#discover{
+    width: 100%;
+    background: #C21336;
+    padding-bottom: 50px;
+}
+#discovertitle{
+    padding: 20px 0;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Merienda';
+    font-size: 45px;
+    color: #fff;
+}
+#discover main{
+    display: flex;
+    -webkit-display:flex;
+    -moz-display:flex;
+    -ms-display:flex;
+    -o-display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#discover .place{
+    width: 390px auto;
+    background: #fff;
+    margin: 50px;
+    transition: .3s linear;
+}
+.place:hover{
+    transform: translateY(-10px);
+}
+#discover h2{
+    text-align: center;
+    padding: 5px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #000;
+}
+.place:hover h2{
+    text-decoration: underline;
+}
+#discover p{
+    padding: 25px;
+}
+#discover img{
+    width: 93%;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid #000;
+    transition: .2s ease;
+}
+#discover img:hover{
+    transform: scale(1.02);
+}
+/* responsiveness */
+@media(max-width:920px){
+    #discover .place{
+        margin: 15px;
+    }
+}
+@media(max-width:730px){
+    #discover main{
+        flex-direction: column;
+        padding: 0 50px;
+    }
+    #discover img{
+        width: 96%;
+    }
+}
+@media(max-width:600px){
+    #discover main{
+        padding: 0;
+    }
+    #discovertitle{
+        font-size: 35px;
+    }
+}
+
+
 
 

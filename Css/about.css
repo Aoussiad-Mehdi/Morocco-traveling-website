@@ -152,6 +152,7 @@ html{
     background: #fff;
     margin: 50px;
     transition: .3s linear;
+    border-radius: 5px;
 }
 .place:hover{
     transform: translateY(-10px);
@@ -200,6 +201,11 @@ html{
     }
     #discovertitle{
         font-size: 35px;
+    }
+}
+@media(max-width:400px){
+    #discover img{
+        width: 93%;
     }
 }
 

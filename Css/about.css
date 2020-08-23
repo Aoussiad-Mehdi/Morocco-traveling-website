@@ -207,6 +207,10 @@ html{
     #discovertitle{
         font-size: 35px;
     }
+    #discover .place{
+        width: auto;
+        -webkit-width:auto;
+    }
 }
 @media(max-width:400px){
     #discover img{

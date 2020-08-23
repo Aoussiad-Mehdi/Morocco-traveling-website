@@ -21,14 +21,14 @@
                 <a href="#" class="nav-link" onclick="removeNav()">Home</a>
                 <a href="#about" class="nav-link" onclick="removeNav()">About</a>
                 <div class="dropdown">
-                <a href="#discover" id="drop" class="nav-link" onmouseout="dropdown2()" onmouseover="dropdown1()">Places <i class="fas fa-chevron-down"></i></a>
+                <a href="#discover" id="drop" class="nav-link" onclick="removeNav()" onmouseout="dropdown2()" onmouseover="dropdown1()">Places <i class="fas fa-chevron-down"></i></a>
                    <div class="dropdown-content" onmouseout="dropdown2()" onmouseover="dropdown1()">
                        <a style="border-bottom:1px solid #ccc" href="#" class="drop-btn">Chefchaouen</a>
                        <a style="border-bottom:1px solid #ccc" href="#" class="drop-btn1">Marrakech</a>
                        <a href="#" class="drop-btn2">Sahara</a>
                    </div>
                 </div>
-                <a href="#discover" class="active">Discover</a>
+                <a href="#discover" class="active" onclick="removeNav()">Discover</a>
             </nav>
             <div class="toggle">
                 <button><i class="fas fa-bars"></i></button>

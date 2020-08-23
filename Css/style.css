@@ -8,6 +8,14 @@
 html{
     scroll-behavior: smooth;
 }
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background: crimson;
+    border-radius: 6px;
+    border: 1px solid #fff;
+}
 ::selection{
     background: crimson;
     color: #fff;

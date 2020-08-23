@@ -153,7 +153,7 @@ html{
     justify-content: center;
 }
 #discover .place{
-    width: 390px auto;
+    width: 390px;
     background: #fff;
     margin: 50px;
     transition: .3s linear;

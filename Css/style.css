@@ -170,6 +170,22 @@ nav{
     justify-content: center;
     align-items: center;
     position: relative;
+    transition: .4s ease;
+    animation: animate 2.5s;
+    animation-delay: 1s;
+    -o-animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+}
+@keyframes animate{
+    from{
+        opacity: 0.2;
+        bottom: 200px;
+    }
+    to{
+        opacity: 1;
+        bottom: 0;
+    }
 }
 #title{
     color: #fff;
@@ -177,7 +193,8 @@ nav{
     font-weight: bold;
     font-size: 80px;
     padding: 20px;
-    margin-top: 70px;
+    margin-top: 50px;
+    transition: .4s ease;
 }
 span{
     color: crimson;
@@ -341,3 +358,36 @@ span{
         bottom: 45px;
     }
 }
+/* animations */
+.animated-cursor{
+    width: 25px;
+    height: 45px;
+    border-radius: 15px;
+    border: #fff 2px solid;
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
+    z-index: 1;
+}
+.circle{
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 50%;
+    margin-left: 1.2px;
+    animation: anime 2s infinite;
+    position: relative;
+    transition: .3s ease;
+}
+@keyframes anime{
+    0%{
+        top: 0;
+    }
+    20%{
+        top: 50%;
+    }
+    100%{
+        top: 0;
+    }
+}
+

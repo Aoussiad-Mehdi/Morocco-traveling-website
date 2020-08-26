@@ -371,24 +371,24 @@ span{
     z-index: 1;
 }
 .circle{
-    width: 18px;
+    width: 17px;
     height: 5px;
     border-radius: 2px;
     background: #fff;
-    margin-left: 1.6px;
+    margin-left: 2px;
     animation: anime 2s infinite;
     position: relative;
     transition: .3s ease;
 }
 @keyframes anime{
     0%{
-        top: 2%;
+        top: 8%;
     }
     20%{
         top: 80%;
     }
     100%{
-        top: 2%;
+        top: 8%;
     }
 }
 

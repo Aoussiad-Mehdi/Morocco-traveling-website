@@ -361,9 +361,10 @@ span{
 /* animations */
 .animated-cursor{
     width: 25px;
-    height: 45px;
+    height: 40px;
     border-radius: 15px;
-    border: #fff 2px solid;
+    border: 1px solid #fff;
+    outline: none;
     position: fixed;
     bottom: 20px;
     left: 10px;
@@ -374,7 +375,7 @@ span{
     height: 18px;
     background: #fff;
     border-radius: 50%;
-    margin-left: 1.2px;
+    margin-left: 1.6px;
     animation: anime 2s infinite;
     position: relative;
     transition: .3s ease;

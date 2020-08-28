@@ -281,7 +281,7 @@ footer p{
 #counters{
     width: 100%;
     color: #fff;
-    background: transparent;
+    background: rgb(24, 24, 24);
     display: flex;
     flex-direction: row;
     align-items: center;

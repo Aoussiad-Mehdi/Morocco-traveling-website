@@ -68,7 +68,7 @@ window.addEventListener('scroll', function(){
         cursor.style.display = 'none';
     }
 });
-console.log(window.scrollY);
+
 
 
 

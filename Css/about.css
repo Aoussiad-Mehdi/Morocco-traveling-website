@@ -277,7 +277,50 @@ footer p{
         font-size: 11px;
     }
 }
-
+/* Animated Counter section */
+#counters{
+    width: 100%;
+    color: #fff;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#counters .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) auto;
+    align-items: center;
+}
+.box{
+    margin: 50px 150px;
+}
+.box i{
+    font-size: 65px;
+    margin: 20px 0;
+    color: rgb(250, 28, 73);
+}
+.counter{
+    font-size: 40px;
+    font-weight: bold;
+}
+.box h2{
+    margin-top: 20px;
+}
+.box span{
+    color: white;
+}
+/* the counter responsiveness */
+@media(max-width:1000px){
+    #counters .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width:700px){
+    #counters .container{
+        grid-template-columns: 1fr;
+    }
+}
 
 
 

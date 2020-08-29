@@ -283,17 +283,22 @@ footer p{
     color: #fff;
     background: rgb(24, 24, 24);
     display: flex;
+    -webkit-display:flex;
+    -moz-display:flex;
+    -o-display:flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 #counters .container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr) auto;
+    width: 100%;
+    display: flex;
+    -webkit-display:flex;
     align-items: center;
+    justify-content: center;
 }
 .box{
-    margin: 50px 150px;
+    margin: 50px auto;
 }
 .box i{
     font-size: 65px;
@@ -307,20 +312,13 @@ footer p{
 .box h2{
     margin-top: 20px;
 }
-.box span{
-    color: white;
-}
 /* the counter responsiveness */
-@media(max-width:1000px){
-    #counters .container{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
 @media(max-width:700px){
     #counters .container{
-        grid-template-columns: 1fr;
+        flex-direction: column;
     }
 }
+
 
 
 

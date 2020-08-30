@@ -7,12 +7,13 @@
 }
 html{
     scroll-behavior: smooth;
+    background: #fff;
 }
 ::-webkit-scrollbar{
     width: 12px;
 }
 ::-webkit-scrollbar-thumb{
-    background: crimson;
+    background: black;
     border-radius: 6px;
     border: 1px solid #fff;
 }
@@ -96,7 +97,7 @@ header{
     -ms-display:flex;
     -o-display:flex;
     flex-direction: column;
-    background: crimson;
+    background: #fff;
     align-items: center;
     justify-content: center;
 }

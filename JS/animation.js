@@ -21,8 +21,6 @@ counters.forEach(counter => {
 		// Lower inc to slow and higher to slow
 		const inc = target / speed;
 
-		// console.log(inc);
-		// console.log(count);
 
 		// Check if target is reached
 		if (count < target) {

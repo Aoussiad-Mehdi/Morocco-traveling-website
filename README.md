@@ -3,4 +3,4 @@ This a good looking website that describes the Morocco country as a good place t
 Check it out here : https://aoussiad-mehdi.github.io/Morocco-traveling-website/# .
 
 ## Demo : 
-- ![Check it Out](https://aoussiad-mehdi.github.io/Morocco-traveling-website/index.html#)
+- [Check it Out](https://aoussiad-mehdi.github.io/Morocco-traveling-website/index.html#)

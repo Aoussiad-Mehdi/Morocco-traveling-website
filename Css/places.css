@@ -37,7 +37,7 @@ header{
     border-bottom: 1px solid #fff;
 }
 .back-btn{
-    flex-basis: 10%;
+    flex-basis: 2%;
 }
 .back-btn a i{
     font-size: 40px;
@@ -45,7 +45,7 @@ header{
     color: #fff;
 }
 .title{
-    flex-basis: 90%;
+    flex-basis: 98%;
     text-align: center;
 }
 .title h1{
@@ -73,7 +73,7 @@ header{
     margin: 40px 0;
 }
 #chefchaouen img{
-    width: 50%;
+    max-width: 650px;
     margin: 10px 0;
     height: 350px;
 }
@@ -105,7 +105,7 @@ header{
 #marrakech h1{
     font-size: 40px;
     font-family: 'Merienda';
-    color: #fff;
+    color: crimson;
     margin: 40px 0;
 }
 #marrakech img{
@@ -142,7 +142,7 @@ header{
     height: 350px;
 }
 #sahara iframe{
-    margin-bottom: 30px;
+    margin-bottom: 80px;
 }
 @media(max-width:750px){
     iframe{

@@ -11,7 +11,7 @@ window.addEventListener('scroll',function(){
 });
 // The animated counter .
 const counters = document.querySelectorAll('.counter');
-const speed = 250;
+const speed = 170;
 
 counters.forEach(counter => {
 	const updateCount = () => {

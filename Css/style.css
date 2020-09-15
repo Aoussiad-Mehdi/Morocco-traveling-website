@@ -45,6 +45,7 @@ header{
 .sticky{
     background: #fff;
     border-bottom: 1px solid #ccc;
+    height: 60px;
 }
 .sticky #logo{
     color: #000;

@@ -45,7 +45,7 @@ header{
 .sticky{
     background: #fff;
     border-bottom: 1px solid #ccc;
-    height: 75px;
+    height: 80px;
 }
 .sticky #logo{
     color: #000;
@@ -281,7 +281,16 @@ span{
         top: 0;
         right: 0;
         z-index: 1;
-        transition: .5s linear;
+        transition: .5s ease-in-out;
+        animation: sliding 1s;
+    }
+    @keyframes sliding{
+        from{
+            transform: translateX(80%);
+        }
+        to{
+            transform: translateX(0);
+        }
     }
     .nav-link{
         display: block;

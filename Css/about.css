@@ -43,6 +43,17 @@ html{
     align-items: center;
     justify-content: center;
     margin: 20px;
+    opacity: 0;
+}
+@keyframes slide{
+    from{
+        transform: translateX(-100px);
+        opacity: 0.2;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 .text{
     margin: 35px;

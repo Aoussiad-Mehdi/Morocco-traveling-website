@@ -11,7 +11,7 @@ window.addEventListener('scroll',function(){
 });
 // The animated counter .
 const counters = document.querySelectorAll('.counter');
-const speed = 170;
+const speed = 120;
 
 counters.forEach(counter => {
 	const updateCount = () => {
@@ -31,6 +31,28 @@ counters.forEach(counter => {
 		} else {
 			counter.innerText = target;
 		}
-    }
-    updateCount();
+	}
+	// Use of the Intersection Observer.
+	const count = document.querySelector('.counter');
+    const observer = new IntersectionObserver(entries=>{
+	if(entries[0].isIntersecting){
+		updateCount();
+	}
+
+},{threshold : 1});
+observer.observe(count);
 });
+
+// About Section animation.
+const column = document.querySelectorAll('.column');
+const observer = new IntersectionObserver(entries=>{
+	entries.forEach(entry=>{
+		if(entry.isIntersecting){
+			entry.target.style.animation = 'slide 2s';
+			entry.target.style.opacity = '1';
+		}
+	})
+},{threshold : 0.8});
+column.forEach(cl =>{
+	observer.observe(cl);
+})

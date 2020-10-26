@@ -145,7 +145,7 @@ html{
     background: #C21336;
     padding: 40px 0;
 }
-#discovertitle{
+#discover #discovertitle{
     padding: 20px 0;
     text-align: center;
     font-weight: bold;

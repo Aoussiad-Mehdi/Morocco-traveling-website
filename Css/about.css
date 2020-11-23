@@ -146,7 +146,7 @@ html{
     padding: 40px 0;
     transition: 0.4s ease;
 }
-#discovertitle{
+#discover #discovertitle{
     padding: 20px 0;
     text-align: center;
     font-weight: bold;

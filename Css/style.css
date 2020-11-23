@@ -158,6 +158,17 @@ nav{
     outline: none;
     background: transparent;
 }
+#darkMode{
+    padding: 10px 13px;
+    cursor: pointer;
+    font-size: 22px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background: rgb(216, 216, 216);
+    color: crimson;
+    display: none;
+}
 /* Home section */
 #home{
     width: 100%;

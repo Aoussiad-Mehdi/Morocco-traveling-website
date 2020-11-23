@@ -55,4 +55,4 @@ const observer = new IntersectionObserver(entries=>{
 },{threshold : 0.8});
 column.forEach(cl =>{
 	observer.observe(cl);
-})
+});

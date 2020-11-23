@@ -144,6 +144,7 @@ html{
     width: 100%;
     background: #C21336;
     padding: 40px 0;
+    transition: 0.4s ease;
 }
 #discovertitle{
     padding: 20px 0;

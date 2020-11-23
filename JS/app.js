@@ -72,6 +72,7 @@ window.addEventListener('scroll', function(){
     }
 });
 
+// Dark Mode.
 const iconn = document.querySelector('#darkMode i');
 const footer = document.querySelector('footer');
 
@@ -98,7 +99,6 @@ darkBtn.addEventListener('click',()=>{
         document.querySelector('#discover').style.background = 'crimson';
         footer.style.background = 'white';
         footer.style.color = 'rgb(24, 24, 24)';
-
     }
 });
 

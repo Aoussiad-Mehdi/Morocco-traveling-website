@@ -288,12 +288,15 @@ span{
         background: rgb(238, 234, 234);
         display: block;
         width: 100%;
-        height: 250px;
+        height: 300px;
         top: 0;
         right: 0;
         z-index: 1;
         transition: .5s ease-in-out;
         animation: sliding 1s;
+    }
+    #darkMode{
+        margin-left: 45%;
     }
     @keyframes sliding{
         from{

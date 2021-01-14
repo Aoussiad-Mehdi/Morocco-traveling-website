@@ -6,6 +6,6 @@ This is a good looking website that describes the Morocco country as a good plac
 
 ![](images/hero.jpg)
 
-Created with ❤️ by Mehdi Aoussiad.
+Designed & Created with ❤️ by Mehdi Aoussiad.
 
 

@@ -196,7 +196,7 @@ nav{
     }
     to{
         opacity: 1;
-        bottom: 0;
+        bottom: 0px;
     }
 }
 #title{

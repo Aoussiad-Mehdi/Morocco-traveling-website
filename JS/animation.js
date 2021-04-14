@@ -56,3 +56,4 @@ const observer = new IntersectionObserver(entries=>{
 column.forEach(cl =>{
 	observer.observe(cl);
 });
+

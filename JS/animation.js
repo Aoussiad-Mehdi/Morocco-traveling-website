@@ -1,4 +1,3 @@
-// here we go again.
 // cursor animation.
 const cursort = document.querySelector('.animated-cursor');
 window.addEventListener('scroll',function(){

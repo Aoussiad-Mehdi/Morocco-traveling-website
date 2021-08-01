@@ -72,36 +72,5 @@ window.addEventListener('scroll', function(){
     }
 });
 
-// Dark Mode.
-const iconn = document.querySelector('#darkMode i');
-const footer = document.querySelector('footer');
-
-darkBtn.addEventListener('click',()=>{
-    if(iconn.className === 'fas fa-moon'){
-        iconn.className = 'fas fa-sun';
-        document.querySelector('#about').style.background = 'rgb(24, 24, 24)';
-        document.querySelector('#about').style.color = 'white';
-        var aboutpara = document.querySelectorAll('#about p');
-        aboutpara.forEach(para=>{
-            para.style.color='black';
-        });
-        document.querySelector('#discover').style.background = 'rgb(24, 24, 24)';
-        footer.style.background = 'rgb(24, 24, 24)';
-        footer.style.color = 'white';
-    }else{
-        iconn.className = 'fas fa-moon';
-        document.querySelector('#about').style.background = 'white';
-        document.querySelector('#about').style.color = 'black';
-        var aboutpara = document.querySelectorAll('#about p');
-        aboutpara.forEach(para=>{
-            para.style.color='black';
-        });
-        document.querySelector('#discover').style.background = 'crimson';
-        footer.style.background = 'white';
-        footer.style.color = 'rgb(24, 24, 24)';
-    }
-});
-
-
 
 
